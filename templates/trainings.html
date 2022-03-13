@@ -1,0 +1,23 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    <link rel="stylesheet"-->
+<!--          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"-->
+<!--          crossorigin="anonymous">-->
+
+<!--           <div>{{title}} </div>-->
+
+
+{% extends "base.html" %}
+{% block content %}
+<meta charset="UTF-8">
+{% if  title.find('инженер') >= 0 or title.find('строитель') >= 0 %}
+    <img src="/static/img/инженерные тренажеры.jpg">
+{% else %}
+    <img src="/static/img/научные симуляторы.jpg">
+{% endif %}
+{% endblock %}
+
