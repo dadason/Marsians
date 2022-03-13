@@ -1,0 +1,21 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title> </title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+{% extends 'base.html' %}
+{% block survey %}
+<meta charset = "UTF-8">
+<h4>имя:{{ name}}<h4>
+    <h4>Фамилия:{{ surname}}<h4>
+        <h4>пол:{{ sex}}<h4>
+            <h4>Образование:{{ education}}<h4>
+                <h4>Профессия:{{ profession}}<h4>
+                <h4>Мотивация:{{ motivation}}<h4>
+                    <h4>Готовы остаться на Марсе?:{{ ready}}<h4>
+{% endblock %}
