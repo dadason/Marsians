@@ -1,0 +1,11 @@
+{% extends 'base.html'   %}
+{% block cubrics %}
+<meta charset = "UTF-8">
+<h1>Размещение по каютам</h1>
+<!--<h3>{{distribution['team'][0]}}</h3>-->
+{%for member in distribution['team'] %}
+{% set a = loop.index-1 %}
+<h3>{{ member}}
+Каюта № {{a+1}} {% if loop.first %} капитан корабля</h3>{% endif %}
+{% endfor %}
+{% endblock %}
